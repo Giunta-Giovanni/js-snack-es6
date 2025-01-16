@@ -16,16 +16,30 @@ const squadre = [
 ];
 
 
-// // salvo all'esterno l'array vuoto chiamato falli squadre
-// const falliSquadre = []
-// // creo un ciclo per iterare le singole squadre
-// for(let i = 0; i < squadre.length; i++){
-//     // salvo gli elementi iesimi dell'array object
 
-//     // modifico il valore delle proprietà inserendogli all'interno dei numeri randomici
-//     // mi prendo per ogni squadra la proprieta nome e falli subiti
-//     // pusho all'interno dell'array solo il nome della squadra e i falli subiti
-// }
+// salvo all'esterno l'array vuoto chiamato falli squadre
+const falliSquadre = []
+// creo un ciclo per iterare le singole squadre
+for(let i = 0; i < squadre.length; i++){
+    // salvo gli elementi iesimi dell'array object
+    let squadra = squadre[i];
+
+    // salvo la proprieta degli elementi iesimi 
+    let punti = squadra.puntiFatti;    //Punti fatti
+    let falli = squadra.falliSubiti;   //Falli subiti
+    
+    // modifico il valore della proprietà inserendogli all'interno dei numeri randomici
+    punti = generaRandomNumberRange(1, 50)
+    falli = generaRandomNumberRange(1, 100)
+    
+    
+    console.log('falli subiti', falli);
+    console.log('punti fatti', punti);
+
+
+    // mi prendo per ogni squadra la proprieta nome e falli subiti
+    // pusho all'interno dell'array solo il nome della squadra e i falli subiti
+}
 
 
 
