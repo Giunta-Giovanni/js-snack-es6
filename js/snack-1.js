@@ -33,7 +33,7 @@ for (let i = 0; i < bici.length; i++){
 
 
 // Calcola il peso minimo usando Math.min
-const leggera = Math.min(...pesi)
+const leggera = Math.min(...pesi);
 console.log('Peso della bici più leggera:', leggera);
 
 // Ciclo per trovare e stampare la bici con il peso più leggero
