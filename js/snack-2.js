@@ -15,33 +15,32 @@ const squadre = [
     { nome: "Falchi Gialli", puntiFatti: 0, falliSubiti: 0 }
 ];
 
-
-
 // salvo all'esterno l'array vuoto chiamato falli squadre
 const falliSquadre = []
 // creo un ciclo per iterare le singole squadre
 for(let i = 0; i < squadre.length; i++){
+
     // salvo gli elementi iesimi dell'array object
     let squadra = squadre[i];
 
-    // salvo la proprieta degli elementi iesimi 
-    let punti = squadra.puntiFatti;    //Punti fatti
-    let falli = squadra.falliSubiti;   //Falli subiti
-    
     // modifico il valore della proprietà inserendogli all'interno dei numeri randomici
-    punti = generaRandomNumberRange(1, 50)
-    falli = generaRandomNumberRange(1, 100)
-    
-    
+    squadra.puntiFatti = generaRandomNumberRange(1, 50)
+    squadra.falliSubiti = generaRandomNumberRange(1, 100)
+
+    // salvo la proprieta degli elementi iesimi 
+    let nome = squadra.nome;           //Nome squadra
+    let falli = squadra.falliSubiti;   //Falli subiti
+
     console.log('falli subiti', falli);
-    console.log('punti fatti', punti);
 
-
-    // mi prendo per ogni squadra la proprieta nome e falli subiti
-    // pusho all'interno dell'array solo il nome della squadra e i falli subiti
+    // inserisco all'interno di falli squadre il nome della squadra e i falli subiti
+    falliSquadre[i] = {
+        nome, falli
+    };
 }
 
-
+// console.log(falliSquadre);
+console.log(falliSquadre);
 
 // FUNCTION 
 // Funzione per generare un numero randomico in un range
