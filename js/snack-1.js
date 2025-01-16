@@ -28,7 +28,7 @@ for (let i = 0; i < bici.length; i++){
     // Peso della bici corrente
     const peso = biciesima.peso;
     // Aggiungi il peso nell'array pesi
-    pesi.push(peso)
+    pesi.push(peso);
 }
 
 
@@ -43,7 +43,7 @@ for (let i = 0; i < bici.length; i++){
     // Confronta se il peso è quello piu leggero
     if (leggera === biciesima.peso){
         // Stampa la bici
-        console.log('la bici più leggera è',biciesima)
+        console.log('la bici più leggera è',biciesima);
     }
 
 }
